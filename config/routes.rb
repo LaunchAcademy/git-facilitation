@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   resources :centaurs, only: [:index, :show]
 
+  resources :trolls, only: [:index]
+
   root 'homes#index'
   # devise_for :users
 end
