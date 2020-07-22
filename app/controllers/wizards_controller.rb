@@ -44,6 +44,15 @@ class WizardsController < ApplicationController
     end
   end
 
+  def destroy
+    @wizard = Wizard.find(params[:id])
+    if @wizard.destroy
+      flash[:notice] = "wizard eliminated"
+    else
+      flash[:notice] = "dark magics have prevented your destruction spells"
+    end
+  end
+
 
   private
 
