@@ -1,0 +1,4 @@
+class Troll < ApplicationRecord
+
+
+end
